@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <header>
+        <hgroup>
+            <h1>GeeksforGeeks</h1>
+            <h2>Feedback Form using HTML and CSS</h2>
+        </hgroup>
+    </header>
+
+    <main>
+        <section>
+            <h3>It only takes two minutes!</h3>
+            <form name="sign_in" action="login" method="post">
+                <label for="name"> Name
+                    <input type="text">
+                </label>
+
+                <label for="email">Email Adress
+                    <input type="email">
+                </label>
+
+                <label for="phone">Phone No.
+                    <input type="tel" id="phone" name="phone" required />
+                </label>
+
+                <fieldset>
+                    <legend>Are you satisfied with our service?</legend>
+                    <div>
+                        <input type="radio" id="satisfied_yes" name="satisfied" value="yes" checked>
+                        <label for="satisfied_yes">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="satisfied_no" name="satisfied" value="no">
+                        <label for="satisfied_no">No</label>
+                    </div>
+                </fieldset>
+                <div>
+                    <label for="feedback"> Write your suggestions:
+                        <textarea name="feedback" id="feedback" placeholder="Write your tips and suggestions!" rows="5"></textarea>
+                    </label>
+                </div>
+                    <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer><p>The End</p></footer>
+</body>
+</html>
